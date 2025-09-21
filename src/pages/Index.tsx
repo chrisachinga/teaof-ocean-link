@@ -71,9 +71,9 @@ const Index = () => {
       
       <main className="container mx-auto px-4 py-16">
         {/* Event Links Section */}
-        <section className="mb-20">
+        <section className="mb-20" aria-labelledby="festival-resources">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-ocean">
+            <h2 id="festival-resources" className="text-3xl md:text-4xl font-bold mb-4 text-gradient-ocean">
               Festival Resources
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

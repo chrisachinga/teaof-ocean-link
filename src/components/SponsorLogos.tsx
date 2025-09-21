@@ -26,7 +26,11 @@ export const SponsorLogos = () => {
           >
             <div className="bg-card rounded-lg p-4 shadow-gentle hover:shadow-ocean transition-all duration-300 hover:scale-105 border border-border">
               <div className="aspect-video bg-muted rounded flex items-center justify-center">
-                <span className="text-xs md:text-sm font-medium text-muted-foreground text-center px-2 group-hover:text-primary transition-colors">
+                <span 
+                  className="text-xs md:text-sm font-medium text-muted-foreground text-center px-2 group-hover:text-primary transition-colors"
+                  role="img"
+                  aria-label={`${sponsor.name} - Official Partner`}
+                >
                   {sponsor.name}
                 </span>
               </div>

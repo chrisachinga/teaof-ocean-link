@@ -9,6 +9,8 @@ export const Hero = () => {
         style={{
           backgroundImage: `linear-gradient(rgba(33, 150, 243, 0.7), rgba(33, 150, 243, 0.5)), url(${heroImage})`,
         }}
+        role="img"
+        aria-label="Tudor Creek waterfront in Mombasa, Kenya - venue for East African Ocean Festival 2025"
       />
       
       {/* Hero Content */}

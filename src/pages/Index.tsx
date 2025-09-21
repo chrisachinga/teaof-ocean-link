@@ -2,68 +2,51 @@ import { Hero } from "@/components/Hero";
 import { LinkButton } from "@/components/LinkButton";
 import { SocialIcons } from "@/components/SocialIcons";
 import { SponsorLogos } from "@/components/SponsorLogos";
-import { 
-  Ticket, 
-  Calendar, 
-  Users, 
-  Map, 
-  Heart, 
-  Building2, 
-  Mail 
+import eventData from "@/data.json";
+import {
+  Ticket,
+  Calendar,
+  Users,
+  Map,
+  Heart,
+  Building2,
+  Mail,
+  Trophy,
+  Image,
+  type LucideIcon
 } from "lucide-react";
 
 const Index = () => {
-  const eventLinks = [
-    {
-      title: "Buy Tickets",
-      description: "Secure your spot at TEAOF 2025 - Early bird pricing available",
-      href: "https://teaof.org/tickets",
-      icon: Ticket,
-      variant: "ocean" as const
-    },
-    {
-      title: "Event Schedule", 
-      description: "View the complete 3-day program of races, shows, and concerts",
-      href: "https://teaof.org/schedule",
-      icon: Calendar,
-      variant: "coral" as const
-    },
-    {
-      title: "Speakers & Artists",
-      description: "Meet the performers and maritime heritage experts",
-      href: "https://teaof.org/speakers",
-      icon: Users,
-      variant: "ocean" as const
-    },
-    {
-      title: "Venue Map",
-      description: "Navigate Tudor Creek and find all festival locations",
-      href: "https://teaof.org/venue",
-      icon: Map,
-      variant: "coral" as const
-    },
-    {
-      title: "Volunteer Signup",
-      description: "Join our team and help make TEAOF 2025 unforgettable",
-      href: "https://teaof.org/volunteer",
-      icon: Heart,
-      variant: "ocean" as const
-    },
-    {
-      title: "Sponsor Information", 
-      description: "Partnership opportunities and sponsor benefits",
-      href: "https://teaof.org/sponsors",
-      icon: Building2,
-      variant: "coral" as const
-    },
-    {
-      title: "Contact Us",
-      description: "Get in touch with our team for any questions",
-      href: "mailto:info@teaof.org",
-      icon: Mail,
-      variant: "ocean" as const
-    }
-  ];
+  const iconMap = {
+    Ticket,
+    Calendar,
+    Users,
+    Map,
+    Heart,
+    Building2,
+    Mail,
+    Trophy,
+    Image
+  } satisfies Record<string, LucideIcon>;
+
+  type EventLinkFromJson = {
+    title: string;
+    description: string;
+    href: string;
+    icon: keyof typeof iconMap;
+    variant: "ocean" | "coral" | "default";
+  };
+
+  type EventData = {
+    eventLinks?: EventLinkFromJson[];
+  };
+
+  const { eventLinks: rawEventLinks = [] } = eventData as EventData;
+
+  const eventLinks = rawEventLinks.map((link) => ({
+    ...link,
+    icon: iconMap[link.icon]
+  }));
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">

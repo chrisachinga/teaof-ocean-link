@@ -1,0 +1,25 @@
+{
+  "eventLinks": [
+    {
+      "title": "Register to Participate",
+      "description": "Sign up as a spectator for TEAOF 2025 and reserve your place on the creek",
+      "href": "https://www.teaof.org/participate/spectators/",
+      "icon": "Ticket",
+      "variant": "ocean"
+    },
+    {
+      "title": "Register for Competitions",
+      "description": "Compete in ocean races and maritime challenges—apply as an athlete or crew member",
+      "href": "https://www.teaof.org/participate/competitors/",
+      "icon": "Trophy",
+      "variant": "coral"
+    },
+    {
+      "title": "Photos & Media",
+      "description": "Browse event imagery and brand assets for sharing TEAOF highlights",
+      "href": "https://drive.google.com/drive/folders/1zFb0pZ4VRVhbfEJXRweZNDkR96yKOjew?usp=sharing",
+      "icon": "Image",
+      "variant": "coral"
+    }
+  ]
+}

@@ -16,6 +16,11 @@ export const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto animate-fade-up">
         <div className="glass-ocean rounded-3xl p-8 md:p-12">
+          <img
+            src="/common-teaof-logo-1b.webp"
+            alt="East African Ocean Festival logo"
+            className="mx-auto mb-6 h-24 w-auto md:h-32"
+          />
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-wave">
             East African Ocean Festival
           </h1>

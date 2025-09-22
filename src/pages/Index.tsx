@@ -51,22 +51,24 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <Hero />
-      
-      <main className="container mx-auto px-4 py-16">
-        {/* Event Links Section */}
-        <section className="mb-20" aria-labelledby="festival-resources">
-          <div className="text-center mb-12">
-            <h2 id="festival-resources" className="text-3xl md:text-4xl font-bold mb-4 text-gradient-ocean">
+
+      <main className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <section className="mb-12 sm:mb-16 lg:mb-20" aria-labelledby="festival-resources">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12 px-2">
+            <h2
+              id="festival-resources"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 text-gradient-ocean tracking-tight"
+            >
               Festival Resources
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
               Everything you need to experience the magic of TEAOF 2025
             </p>
           </div>
-          
-          <div className="grid gap-6 max-w-4xl mx-auto">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {eventLinks.map((link, index) => (
-              <div 
+              <div
                 key={link.title}
                 className="animate-fade-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
@@ -78,53 +80,58 @@ const Index = () => {
         </section>
       </main>
 
-      <footer className="bg-card border-t border-border py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl font-bold mb-4 text-gradient-ocean">
+      <footer className="bg-card border-t border-border py-8 sm:py-12 lg:py-16">
+        <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gradient-ocean tracking-tight">
               Stay Connected
             </h3>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8">
               Follow us for the latest updates and behind-the-scenes content
             </p>
-            <SocialIcons />
+            <div className="flex justify-center">
+              <SocialIcons />
+            </div>
           </div>
-          
-          <div className="mb-12">
+
+          <div className="mb-8 sm:mb-12">
             <SponsorLogos />
           </div>
-          
-          <div className="border-t border-border pt-8 text-center">
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div>
-                <h4 className="font-semibold mb-2">Contact</h4>
-                <p className="text-sm text-muted-foreground">
+
+          <div className="border-t border-border pt-6 sm:pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6">
+              <div className="space-y-1">
+                <h4 className="font-semibold mb-2 text-sm sm:text-base">Contact</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   <a href="mailto:info@teaof.org" className="hover:text-primary transition-colors">
                     info@teaof.org
                   </a>
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   <a href="tel:+254700222263" className="hover:text-primary transition-colors">
                     +254 700 222 263
                   </a>
                 </p>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Location</h4>
-                <p className="text-sm text-muted-foreground">
+
+              <div className="space-y-1">
+                <h4 className="font-semibold mb-2 text-sm sm:text-base">Location</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   Tudor Creek<br />
                   Mombasa, Kenya
                 </p>
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Office</h4>
-                <p className="text-sm text-muted-foreground">
+
+              <div className="space-y-1">
+                <h4 className="font-semibold mb-2 text-sm sm:text-base">Office</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   Epic Business Centre, Block A<br />
                   5th Floor, Nyali, Mombasa
                 </p>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground">
+
+            <p className="text-xs sm:text-sm text-muted-foreground text-left sm:text-center">
               © 2025 East African Ocean Festival Limited. All rights reserved.
             </p>
           </div>

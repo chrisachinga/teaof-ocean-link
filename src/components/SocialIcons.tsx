@@ -30,7 +30,7 @@ const socialLinks = [
 
 export const SocialIcons = () => {
   return (
-    <div className="flex gap-4 justify-center">
+    <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
       {socialLinks.map((social) => {
         const Icon = social.icon;
         return (
@@ -38,7 +38,7 @@ export const SocialIcons = () => {
             key={social.name}
             variant="ghost"
             size="icon"
-            className={`rounded-full bg-card hover:scale-110 transition-all duration-300 ${social.color}`}
+            className={`rounded-full bg-card hover:scale-110 transition-all duration-300 w-10 h-10 sm:w-12 sm:h-12 ${social.color}`}
             asChild
           >
             <a
@@ -47,7 +47,7 @@ export const SocialIcons = () => {
               rel="noopener noreferrer"
               aria-label={`Follow TEAOF on ${social.name}`}
             >
-              <Icon className="w-6 h-6" />
+              <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
             </a>
           </Button>
         );

@@ -35,19 +35,19 @@ export const LinkButton = ({
       asChild
       size="lg"
       className={cn(
-        "w-full h-auto p-6 md:p-8 rounded-2xl flex flex-col items-center gap-3 group",
+        "w-full h-auto p-4 sm:p-5 md:p-6 lg:p-8 rounded-xl sm:rounded-2xl flex flex-col items-start gap-3 sm:gap-4 text-left group sm:items-center sm:text-center",
         getButtonClasses(),
         className
       )}
     >
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <div className="flex items-center gap-3 mb-2">
-          {Icon && <Icon className="w-6 h-6 md:w-8 md:h-8 group-hover:animate-wave" />}
-          <span className="text-xl md:text-2xl font-bold">{title}</span>
-          <ExternalLink className="w-5 h-5 opacity-70" />
+        <div className="flex items-center gap-2 sm:gap-3 flex-wrap text-left sm:justify-center">
+          {Icon && <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 group-hover:animate-wave" />}
+          <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-tight">{title}</span>
+          <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 opacity-70 shrink-0" />
         </div>
         {description && (
-          <p className="text-sm md:text-base opacity-90 text-center leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base opacity-90 leading-relaxed sm:max-w-lg sm:text-center">
             {description}
           </p>
         )}

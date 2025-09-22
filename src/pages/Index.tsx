@@ -52,7 +52,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       <Hero />
 
-      <main className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <main className="mx-auto w-full max-w-screen-xl px-3 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-16">
         <section className="mb-12 sm:mb-16 lg:mb-20" aria-labelledby="festival-resources">
           <div className="text-center mb-8 sm:mb-10 lg:mb-12 px-2">
             <h2
@@ -66,7 +66,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5 max-w-5xl mx-auto">
             {eventLinks.map((link, index) => (
               <div
                 key={link.title}

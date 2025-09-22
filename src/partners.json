@@ -1,0 +1,14 @@
+{
+  "sponsors": [
+    { "logo": "baus-taka.png", "alt": "Baus Taka" },
+    { "logo": "explore-mombasa.jpeg", "alt": "Explore Mombasa" },
+    { "logo": "jumeirah.jpeg", "alt": "Jumeirah" },
+    { "logo": "marine-craft.jpeg", "alt": "Marine Craft" },
+    { "logo": "mira-heights.png", "alt": "Mira Heights" },
+    { "logo": "mombasa-tourism-council.jpeg", "alt": "Mombasa Tourism Council" },
+    { "logo": "mombasa-walks.png", "alt": "Mombasa Walks" },
+    { "logo": "msa-county-gov.png", "alt": "Mombasa County Government" },
+    { "logo": "skyward-airlines.jpeg", "alt": "Skyward Airlines" },
+    { "logo": "tudor-water-sports.jpeg", "alt": "Tudor Water Sports" }
+  ]
+}
